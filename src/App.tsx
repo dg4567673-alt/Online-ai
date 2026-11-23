@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { DpModal } from './components/DpModal';
 import { GalleryWorkspace } from './components/GalleryWorkspace';
 import { PhotoStudioWorkspace } from './components/PhotoStudioWorkspace';
+import { OfflineIndicator } from './components/PWAInstallButton';
 import { Sidebar } from './components/Sidebar';
 import { TopBar } from './components/TopBar';
 import { VideoMakerWorkspace } from './components/VideoMakerWorkspace';
@@ -180,6 +181,8 @@ export default function App() {
         onSave={handleSaveProfile}
         onClose={() => setIsDpModalOpen(false)}
       />
+
+      <OfflineIndicator />
     </div>
   );
 }

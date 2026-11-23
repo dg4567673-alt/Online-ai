@@ -1,6 +1,7 @@
 import { Film, FolderOpen, Image as ImageIcon, MessageSquareText, Moon, Sun } from 'lucide-react';
 import type { UserProfile, WorkspaceId } from '../types/studio';
 import { BRAND_DP_URL } from '../utils/fileHelpers';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface SidebarProps {
   activeWorkspace: WorkspaceId;
@@ -98,8 +99,10 @@ export function Sidebar({
         </nav>
       </div>
 
-      {/* Footer Controls: Theme + User DP */}
+      {/* Footer Controls: Install App + Theme + User DP */}
       <div className="space-y-3 border-t border-slate-200 pt-4 dark:border-slate-800">
+        <PWAInstallButton />
+
         <button
           type="button"
           onClick={onToggleTheme}
