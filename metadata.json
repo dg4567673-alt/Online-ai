@@ -1,0 +1,6 @@
+{
+  "name": "Online AI",
+  "description": "Free multimodal AI creative studio for writing, photo upload & editing, AI artwork, and real downloadable AI videos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
